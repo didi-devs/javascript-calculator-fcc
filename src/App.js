@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="container">
       <div className="grid">
+        <div className="dis"></div>
         <div className="padButton AC">AC</div>
         <div className="padButton C">C</div>
         <div className="padButton div">/</div>
@@ -20,10 +21,11 @@ function App() {
         <div className="padButton one">1</div>
         <div className="padButton two">2</div>
         <div className="padButton three">3</div>
-        <div className="padButton equals">=</div>
+        <div className="padButton equal">=</div>
         <div className="padButton zero">0</div>
         <div className="padButton dot">.</div>
-      </div>
+        
+        </div>
     </div>
   );
 }
