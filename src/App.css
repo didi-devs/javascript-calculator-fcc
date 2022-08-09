@@ -29,3 +29,14 @@
    "zero zero dot equal"
   ;
 }
+
+.padButton{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: grey;
+  color: white;
+  border: 2px solid black;
+  cursor: pointer;
+}
