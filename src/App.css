@@ -4,7 +4,8 @@
 
 
 
-.App-header {
+.container {
+  /* padding-top: 100px; */
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -15,4 +16,16 @@
   color: white;
 }
 
-
+.grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+   "dis dis dis dis"
+   "Ac C div times"
+   "seven eight nine minus"
+   "four five six plus"
+   "one two three equal"
+   "zero zero dot equal"
+  ;
+}
