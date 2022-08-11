@@ -6,15 +6,16 @@ function App() {
   const [expression, setExpression] = React.useState("");
   const [answer, setAnswer] = React.useState(0);
 
+
   const display = (symbol) => {
-    setExpression((prev) => prev + symbol);
-    if (expression(expression.length - 1) === "=") {
-      if (/[0-9.]/.test(symbol)) {
-        setExpression(symbol);
-      } else {
-        setExpression(answer + symbol);
-      }
-    }
+     setExpression((prev) => prev + symbol);
+     if (expression(expression.length - 1) === "=") {
+       if (/[0-9.]/.test(symbol)) {
+         setExpression(symbol);
+       } else {
+         setExpression(answer + symbol);
+       }
+     }
   };
 
   const calculate = () => {
