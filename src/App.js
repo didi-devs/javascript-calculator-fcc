@@ -9,10 +9,10 @@ function App() {
   const display = (symbol) => {
     setExpression((prev) => prev + symbol);
     if (expression(expression.length - 1) === "=") {
-      if(/[0-9 ]/.test{symbol}) {
+      if (/[0-9.]/.test(symbol)) {
         setExpression(symbol);
       } else {
-        setExpression(answer + symbol)
+        setExpression(answer + symbol);
       }
     }
   };
@@ -35,7 +35,6 @@ function App() {
     );
     setAnswer(0);
   };
-  
 
   return (
     <div className="container">
