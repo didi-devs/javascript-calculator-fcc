@@ -45,6 +45,12 @@
 
 }
 
+.padButton:hover{
+  border: 2px solid rgb(0, 0, 0);
+  color:rgb(235, 219, 219);
+  background-color: #1e1f21;
+}
+
 .operator {
   background-color: rgb(34, 32, 29);
 }
@@ -79,6 +85,9 @@
   border: none;
 }
 
+input::placeholder{
+  color: rgb(184, 175, 175)
+}
 .zero {
   grid-area: zero;
 }

@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { clear } from "@testing-library/user-event/dist/clear";
+// import { clear } from "@testing-library/user-event/dist/clear";
 
 function App() {
   const [expression, setExpression] = React.useState("");
@@ -19,14 +19,15 @@ function App() {
     setAnswer(0);
   };
   const clear = () => {
-      setExpression((prev) =>
-        prev
-          .split("")
-          .slice(0, prev.length - 1)
-          .join("")
-      );
-      setAnswer(0);
+    setExpression((prev) =>
+      prev
+        .split("")
+        .slice(0, prev.length - 1)
+        .join("")
+    );
+    setAnswer(0);
   };
+  
 
   return (
     <div className="container">
