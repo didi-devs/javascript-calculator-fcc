@@ -5,18 +5,19 @@ import React from "react";
 function App() {
   const [expression, setExpression] = React.useState("");
   const [answer, setAnswer] = React.useState(0);
+  //const operand = ['0','1', '2', '3', '4', '5', '6', '7', '8', '9','.']
 
-
-  const display = (symbol) => {
+   const display = (symbol) => {
      setExpression((prev) => prev + symbol);
-     if (expression(expression.length - 1) === "=") {
-       if (/[0-9.]/.test(symbol)) {
+     if (expression(expression.length - 1) = "=") {
+       if (/[^0-9.]/.test(symbol)) {
          setExpression(symbol);
        } else {
          setExpression(answer + symbol);
+         
        }
      }
-  };
+   };
 
   const calculate = () => {
     setAnswer(eval(expression));
@@ -92,7 +93,7 @@ function App() {
         <div onClick={calculate} className="padButton equal operator">
           =
         </div>
-        <div onClick={() => display("7")} className="padButton zero dark-gray">
+        <div onClick={() => display("0")} className="padButton zero dark-gray">
           0
         </div>
         <div onClick={() => display(".")} className="padButton dot operator">
